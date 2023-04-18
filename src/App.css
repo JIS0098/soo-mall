@@ -1,52 +1,51 @@
-.nav-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 40px 30px 10px 0;
-
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 30px 10px 0;
 }
 
-.nav-header div{
-    margin-left: 5px;
+.nav-header div {
+  margin-left: 5px;
 }
 
-.nav-logo{
-    display: flex;
-    justify-content: center;
+.nav-logo {
+  display: flex;
+  justify-content: center;
 }
 
-.nav-menu-list{
-    display: flex;
-    padding-left: 0;
+.nav-menu-list {
+  display: flex;
+  padding-left: 0;
 }
-.nav-menu-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.nav-menu-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .nav-menu-list li {
-    list-style-type: none;
-    font-size: 17px;
-    margin:0 10px;
-
+  list-style-type: none;
+  font-size: 17px;
+  margin: 0 10px;
 }
 
-.nav-menu-search{
-    border-bottom: 1px solid #000;
-    position: absolute;
-    padding: 5px;
-    right: ZZZZ;
-    
+.nav-menu-search {
+  border-bottom: 1px solid #000;
+  position: absolute;
+  padding: 5px;
+  right: 20px;
 }
 
 .nav-menu-search input {
-    border: none;
-     margin-left: 5px;
+  border: none;
+  margin-left: 5px;
 }
-
+.nav-menu-search input {
+  outline: none;
+}
 .nav-menu-search input[type="text" i] {
-    padding: 1px 2px;
-    font-size: 16px;
+  padding: 1px 2px;
+  font-size: 16px;
 }
