@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-import {faSearch} from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const menuList = [
@@ -14,15 +15,25 @@ const Navbar = () => {
     "Sale",
     "지속가능성",
   ];
+
+  const navigate = useNavigate();
+  const goToHomePage = () => {
+    navigate("/");
+  };
+  const goToLoginPage = () => {
+    navigate("/login");
+  };
+
   return (
     <div>
       <header>
         <div className="nav-header">
           <FontAwesomeIcon icon={faUser} />
-          <div>로그인</div>
+          <div onClick={goToLoginPage}>로그인</div>
         </div>
         <div className="nav-logo">
           <img
+            onClick={goToHomePage}
             width={100}
             src="https://logos-world.net/wp-content/uploads/2020/04/HM-Logo-1999-present.jpg"
           />
